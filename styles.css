@@ -1,0 +1,144 @@
+body {
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #5b8a72;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #5b8a72;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #56776c;
+    font-weight: bold;
+}
+
+p {
+    color: #464f41;
+    line-height: 2;
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+span {
+    text-decoration: underline;
+}
+
+a {
+    color: #464f41;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 20px;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
+
+.bottom-cloud {
+    position: absolute;
+    top: 480px;
+    left: 210px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 250px;
+}
+
+.top-container {
+    position: relative;
+    padding: 170px;
+    background-color: #bfcba8;
+}
+
+.middle-container {
+    padding: 50px 0;
+}
+
+.bottom-container {
+    background-color: #5b8a72;
+    margin-bottom: 0;
+    padding: 50px 0px; 
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.cake {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.coding {
+    width:25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.mini-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.profile {
+    margin: auto;
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+.skills {
+    margin-top: 70px;
+}
+
+.contact-me {
+    margin: 50px auto 60px;
+    width: 50%;
+}
+
+.BUTTON_MMC {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: #5b8a72;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #5b8a72 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 40px;
+ }
+
+ .copyright {
+     color: #EAF6F6;
+     font-size: 0.75rem;
+     padding: 20px 0;
+ }
