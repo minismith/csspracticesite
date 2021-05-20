@@ -147,3 +147,11 @@ a:hover {
      font-size: 0.75rem;
      padding: 20px 0;
  }
+
+@media (max-width: 1028px) {
+    
+    body {
+        text-align: center;
+    }
+    
+}
