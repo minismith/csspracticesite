@@ -1,152 +1,185 @@
-<!DOCTYPE html>
-<html>
+body {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>Mini Smith</title>
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
 
-<!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+p {
+    color: #798777;
+}
 
-  <!-- CSS Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+/* Headings */
 
-<!-- Font Awesome-->
-  <script src="https://kit.fontawesome.com/ce80f2d378.js" crossorigin="anonymous"></script>
+.big-heading {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.5;
+}
 
-  <link href="favocado.ico" rel="icon" type="image/x-icon" />
-  
-</head>
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
-<section class="colored-section" id="title">
-    <div class="container-fluid">
-        <!-- Nav Bar -->
-    
-        <nav class="navbar navbar-expand-lg navbar-dark">
-    
-            <a class="navbar-brand" href="">MINI SMITH</a>
-          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                 </button>
-                
-               <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav ms-auto me-3">
-                 <li class="nav-item">
-                     <a class="nav-link" href="#about">About</a>
-                 </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#writing">Writing</a>
-                 </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#contact">Contact</a>
-                 </li>
-           </ul> 
-               </div>
-          
-           </nav>
+.section-title {
+    color: #798777;
+}
 
-             <!-- Title -->
-  <div class="row">
+/* Containers  */
 
-    <div class="col-lg-6">
-      <div>
-        <h1 class="big-heading">Writer, editor, programmer.</h1>
-      </div>
-    </div>
+.container-fluid {
+    padding: 7% 15%;
+}
 
-    <div class="col-lg-6 profile-pic-container">
-      <img class="profile-pic" src="min-pic.jpeg" alt="mini-profile">
-    </div>
+/* Sections */
 
-  </div>
+.colored-section {
+    background-color: #BDD2B6;
+    color: white;
+}
 
-</div>
+.white-section {
+    background-color:#F8EDE3;
+}
 
-  </section>
+/* Navigation Bar */ 
 
-  <!-- About Me -->
+.navbar {
+    padding: 0 0 4.5rem;
+}
 
-  <section class="white-section" id="about">
-  <div class="container-fluid">
+.navbar-brand {
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
 
-    <h1 class="section-title">About me</h1>
-    <p>Hello! My name is Mini and I am a lifestyle features journalist based in London. I have experience writing across a range of topics - from health and nutrition trend reports to emotional, first-person reported features and celebrity interviews. I have a Master’s degree in Magazine Journalism from City, University of London and completed my undergraduate at the University of Cambridge.</p> 
-    <p>Outside of journalism, I enjoy writing short stories and dreaming about a novel I’m yet to begin… I am also a huge foodie, which may be evident in my (extremely small) cake business and newsletter, Buffet.</p>
-    <p>I am also learning to code, focusing on web development and languages such as HTML, CSS, JavaScript, Node.js, MongoDB and Python. Check out my Github for more of that - and in the meantime, please forgive any bugs on this page. It’s a work in progress!</p>
+.nav-item {
+    padding: 0 1.5rem;
+}
 
-  </div>
+.nav-link {
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
 
-  </section>
+/* Title Section */
 
-  <!-- Writing -->
+#title .container-fluid {
+    padding: 3% 15% 17%;
+    text-align: left;
+}
 
-  <section class="colored-section" id="writing">
-  <div class="container-fluid">
+/* Title Profile Pic Image */
 
-  <h1 class="writing-title">Writing</h1>
+.profile-pic {
+    width: 58%;
+    position: absolute;
+    right: 20%;
+    z-index: 0;
+}
 
-  <div class="row row-cols-3" id="pics-row">
+.profile-pic-container {
+    position: relative;
+}
 
-    <div class="col-lg-4 col-sm-12 example-pdf">
-        <div>
-            <img class="mag-pic" src="wh-cover.jpg" alt="mini-profile">
-            <p>Here is an example of a thing that I have written.</p>
-        </div>
-    </div>
+/* Download Buttons */
 
-    <div class="col-lg-4 col-sm-12 example-pdf">
-        <div>
-            <img class="mag-pic" src="wh-cover.jpg" alt="mini-profile">
-            <p>Here is an example of a thing that I have written.</p>
-        </div>
-    </div>
+.download-button {
+    margin: 5% 3% 5% 0;
+}
 
-    <div class="col-lg-4 col-sm-12 example-pdf">
-        <div>
-            <img class="mag-pic" src="wh-cover.jpg" alt="mini-profile">
-            <p>Here is an example of a thing that I have written.</p>
-        </div>
-    </div>
+/* About Me Section */
 
-   </div>
-  
-</div>
+#about {
+    position: relative;
+}
 
-  </section>
+.about {
+    padding: 5%;
+}
 
-  <!-- Contact -->
+.about-icon {
+    color: #ef8172;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
 
-  <section class="white-section" id="contact">
+.about-icon:hover {
+    color: #ff4c68;
+}
 
-   <div class="container-fluid">
+/* Writing Section */
 
-  <h1 class="section-title">Get in touch</h1>
-  <p>If you'd like to work together, feel free to <a href="mailto:minismith742@gmail.com" id="email-link">email me</a>. Or find me on my socials, below!</p>
+.writing-title {
+  color: white;
+}
 
-   </div>
+.writing-p {
+    color: white;
+}
 
-  </section>
+.mag-pic {
+    width: 100%;
+    padding-bottom: 20px;
+}
 
-  <!-- Footer -->
+#pics-row {
+    padding-top: 20px;
+}
 
-  <footer class="colored-section" id="footer">
 
-    <div class="container-fluid">
+/* Call to Action Section */
 
-      <a href="https://twitter.com/mynameismini"><i class="fab fa-twitter social-icon"></i></a>
-      <a href="https://www.instagram.com/minithesmith/"><i class="fab fa-instagram social-icon"></i></a>
-      <a href="mailto:minismith742@gmail.com"><i class="fas fa-envelope social-icon"></i></a>
+.cta-head {
+    font-size: 3.5rem;
+    margin: auto;
+}
 
-    <p class="copyright">© Copyright 2021 Mini Smith</p>
+.download-button-bottom {
+    margin: 5% 3% 5% 0;
+}
 
-    </div>
-</footer>
+#email-link {
+    color: #798777;
+}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</body>
+/* Footer */
 
-</html>
+.social-icon {
+    margin: 20px 10px;
+    color: white;
+}
+
+.copyright {
+    color: white;
+}
+
+@media (max-width: 1028px) {
+    .profile-pic {
+        position: static;
+        height: auto;
+        display: block;
+        align-content: center;
+        margin: auto;
+    }
+
+    .big-heading {
+        text-align: center;
+    }
+
+    .mag-pic {
+        height:auto;
+        display: block;
+    }
+
+    #writing {
+        text-align: center;
+    }
+}
