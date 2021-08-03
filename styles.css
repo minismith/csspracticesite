@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-p {
+.link {
     color: #798777;
 }
 
@@ -45,6 +45,7 @@ p {
 
 .white-section {
     background-color:#F8EDE3;
+    color: #798777;
 }
 
 /* Navigation Bar */ 
@@ -89,12 +90,6 @@ p {
     position: relative;
 }
 
-/* Download Buttons */
-
-.download-button {
-    margin: 5% 3% 5% 0;
-}
-
 /* About Me Section */
 
 #about {
@@ -105,49 +100,22 @@ p {
     padding: 5%;
 }
 
-.about-icon {
-    color: #ef8172;
-    font-size: 4rem;
-    padding-bottom: 1rem;
-}
-
-.about-icon:hover {
-    color: #ff4c68;
-}
-
 /* Writing Section */
 
-.writing-title {
-  color: white;
-}
 
-.writing-p {
-    color: white;
-}
-
-.mag-pic {
-    width: 100%;
-    padding-bottom: 20px;
+.example-pdf {
+    padding-bottom: 30px;
 }
 
 #pics-row {
     padding-top: 20px;
 }
 
-
 /* Call to Action Section */
 
 .cta-head {
     font-size: 3.5rem;
     margin: auto;
-}
-
-.download-button-bottom {
-    margin: 5% 3% 5% 0;
-}
-
-#email-link {
-    color: #798777;
 }
 
 /* Footer */
@@ -157,9 +125,7 @@ p {
     color: white;
 }
 
-.copyright {
-    color: white;
-}
+/* Responsive Stuff */ 
 
 @media (max-width: 1028px) {
     .profile-pic {
@@ -182,4 +148,61 @@ p {
     #writing {
         text-align: center;
     }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Image overlay stuff */ 
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.mag-pic {
+    padding-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .mag-pic {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: white;
+    color: #798777;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.overlay-link {
+    text-decoration: none;
 }
