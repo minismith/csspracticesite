@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 20%;
     z-index: 0;
+    border-radius: 51% 49% 42% 58% / 64% 29% 71% 36%;
 }
 
 .profile-pic-container {
